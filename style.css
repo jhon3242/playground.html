@@ -1,0 +1,41 @@
+h1{
+    font-size : 150px;
+    padding : 100px;
+    padding-bottom:5px;
+    text-align:center;
+  }
+  .TestButton  {
+    margin  : 100px;
+    margin-top:10px;
+    margin-bottom:2px;
+    width:100px;
+    height:50px;
+    font-size:100%;
+   
+    
+    
+    
+  }
+  #grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    justify-items: center;
+    align-items: center;
+  }
+  h2{
+    text-align:center;
+ 
+  }
+  #back{
+    height:30px; 
+    width:109px; 
+    margin: -20px -50px; 
+    position:relative;
+    top:50%; 
+    left:50%;
+  }
+  #sub{
+    text-align:center; 
+  }
+ 
+    

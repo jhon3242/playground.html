@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>PLAY.2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <h1>PLAY.2</h1>
+    <img onclick="insert()" src="dollor.jpg" alt="dollor">
+    
+    <script>
+        let i = 100
+        function insert(){
+            i=i+100;
+            alert('Now you have '+i+' dollors');
+        }
+    </script>
+    
+    <img onclick="use()" width="300px" height="400px" src="vendingmashin.jpg" alt="vending mashine">
+    <script>
+        function use(){
+            if(i>=1000){
+                i=i-1000;
+                alert('Thanks you for using, now your account left '+i+' dollors');
+            }else{
+                alert('money is not enought!')
+            }
+        }
+    </script>
+    <img width="300px" height="180px" onclick="left()" src="piggy bank.jpg" alt="piggy bank">
+    <script>
+        function left(){
+            alert('you have '+i+' dollors');
+        }
+    </script>
+   
+
+    
+    
+    
+</body> 
+
+</html>
