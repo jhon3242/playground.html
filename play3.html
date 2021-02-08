@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>PLAY.3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>PLAY.3</h1>
+    <img src="" alt="">
+    <h2 >Me</h2>
+    <div id="discribe"></div>
+    <div>
+        <script>
+            const human=[
+            {name : "TACAN",age : 20, gendal : "Male"},
+            {name : "VOR", age: 24, gendal : "female"}
+        ]
+            function but1 (number) {
+                document.write(human[number].name+"<br>");
+                document.write(human[number].age+"<br>");
+                document.write(human[number].gendal+"<br><br>");
+            }
+            but1(0);
+            but1(1);
+            for(const key in human){
+                document.write(key)
+            }
+
+        </script>
+    </div>
+
+
+</body>
+</html>
