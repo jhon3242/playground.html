@@ -1,9 +1,24 @@
-
 .js-form,
 .js-input,
+.find,
 .survey_class{
     display: none;
 }
 .showing{
     display: block;
 }
+h1{
+    font-size : 150px;
+    padding : 100px;
+    padding-bottom:5px;
+    text-align:center;
+  }
+.content{
+    text-align: center;
+}
+
+.js-input {
+    
+    margin-right: auto;
+    margin-left: auto;
+  }
