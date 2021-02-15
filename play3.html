@@ -7,27 +7,56 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <a href="play1.html">PLAY.1</a>
+    <a href="play2.html">PLAY.2</a>
+    <a href="play4.html">PLAY.4</a>
     <h1>PLAY.3</h1>
     <img src="" alt="">
     <h2 >Me</h2>
-    <div id="discribe"></div>
-    <div>
+
+    <div id="discribe">
         <script>
             const human=[
-            {name : "TACAN",age : 20, gendal : "Male"},
+            {name : "TACAN",age : 20, gendal : "Male" ,hobby: {
+                game : {
+                    FPS : ["BAG","Sudden","Cas online"],
+                    RPG : ["Maple","seven knight"],
+                    RollPlaing : "Leage of Legend"
+                },
+                music : {
+                    KPOP : ["아이유","이적","정승환"],
+                    POP  : ["rill diky","pink sweat"],
+                    RAP : "리쌍"
+                },
+                sports : "soccor"
+            }},
             {name : "VOR", age: 24, gendal : "female"}
-        ]
+            ]
+            
+
             function but1 (number) {
                 document.write(human[number].name+"<br>");
                 document.write(human[number].age+"<br>");
-                document.write(human[number].gendal+"<br><br>");
+                document.write(human[number].gendal+"<br>");
             }
             but1(0);
-            but1(1);
-            for(const key in human){
-                document.write(key)
-            }
+            document.write(human[0].hobby.music.KPOP[0]+"<br><br>");
 
+            but1(1);
+           
+
+            function bu2 (name,age){
+                return(`I'm ${name},  I'm ${age} years old`)
+            }
+            const test1 = bu2("choi",24);
+            document.write(test1); //여기는 잘 작동
+
+            const test2 =  document.write(test1)
+            document.querySelector("test1").style.color="red"
+         
+
+            
+            
         </script>
     </div>
 
