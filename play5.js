@@ -1,16 +1,36 @@
 
-   
+const body= document.querySelector("body");
+const count = document.querySelector("#count");
+const box=[
+    "Alpha","Bravo","Chalie","Delta"
+]
 
+
+
+//개체를 쓰는 함수
+function writeBox(){
+    
+    for (let i=0;i<box.length ;i++ ){
+        const li= document.createElement("li")
+        const span = document.createElement("span")
+        const ul=document.createElement("ul")
+        const ww=box[i];
+        span.innerText=`${box[i]}`;
+        li.appendChild(span);
+        ul.appendChild(li);
+        body.appendChild(ul);
+        
+    }
+}
+
+//개체 개수 쓰는 함수
+function writeCount(){
+    count.innerText=`Count : ${box.length}`;
+}
 
 function init(){
-    const box=[
-        Alpha,Bravo,Chalie,Delta
-    ]
-
-    for (let i=0;i<10 ;i++ ){
-        document.write(box[i]);
-    }
-    r
+    writeBox();
+    writeCount();
 }
 
 init ();
